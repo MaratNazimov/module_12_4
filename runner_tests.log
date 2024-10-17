@@ -1,0 +1,16 @@
+2024-10-17 19:21:04,595 | WARNING | Неверный тип данных для объекта Runner | root
+Traceback (most recent call last):
+  File "C:\Users\marat\Python Marat\Marat_1\module_12\module_12_4.py", line 28, in test_run
+    name = test.Runner(True)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\marat\Python Marat\Marat_1\module_12\test_module_12_4.py", line 6, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано bool
+2024-10-17 19:21:04,597 | WARNING | Неверная скорость для Runner | root
+Traceback (most recent call last):
+  File "C:\Users\marat\Python Marat\Marat_1\module_12\module_12_4.py", line 17, in test_walk
+    name = test.Runner(name, speed=-1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\marat\Python Marat\Marat_1\module_12\test_module_12_4.py", line 11, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -1
